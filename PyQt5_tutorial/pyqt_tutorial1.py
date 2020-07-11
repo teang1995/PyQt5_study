@@ -2,6 +2,7 @@
 
 import sys
 from PyQt5.QtWidgets import QApplication, QWidget
+import jupyter
 
 class MyApp(QWidget):
 
@@ -15,7 +16,12 @@ class MyApp(QWidget):
         self.resize(400, 400)
         self.show()
 
-if __name__ == '__main__':
+
+def main():
     app = QApplication(sys.argv)
     ex = MyApp()
     sys.exit(app.exec_())
+
+
+if __name__ == '__main__':
+    main()
